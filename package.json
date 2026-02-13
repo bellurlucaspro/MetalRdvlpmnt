@@ -1,5 +1,5 @@
 {
-      "name": "METALR",
+      "name": "metalr",
       "version": "0.1.0",
       "private": true,
       "dependencies": {
@@ -64,10 +64,15 @@
             "@types/react-dom": "^19.2.3",
             "@types/react-simple-maps": "^3.0.6",
             "@vitejs/plugin-react-swc": "^3.10.2",
+            "autoprefixer": "^10.4.16",
+            "postcss": "^8.4.32",
+            "tailwindcss": "^3.4.0",
+            "typescript": "^5.3.3",
             "vite": "6.3.5"
       },
       "scripts": {
             "dev": "vite",
-            "build": "vite build"
+            "build": "tsc && vite build",
+            "preview": "vite preview"
       }
 }
